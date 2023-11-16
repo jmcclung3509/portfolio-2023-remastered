@@ -3,19 +3,19 @@
 		<h2 class="text-2xl text-light-peach">Experience & Skills</h2>
 		<div class="menu flex justify-start gap-14 pb-14">
 			<h3
-				class="text-1.2xl text-light-peach"
+				class="text-1.2xl text-dark-purple"
 				:class="{ active: data.selectedSection === 'about' }"
 				@click="showSection('about')">
 				About
 			</h3>
 			<h3
-				class="text-1.2xl text-light-peach"
+			class="text-1.2xl text-dark-purple"
 				:class="{ active: data.selectedSection === 'skills' }"
 				@click="showSection('skills')">
 				Skills
 			</h3>
 			<h3
-				class="text-1.2xl text-light-peach"
+			class="text-1.2xl text-dark-purple"
 				:class="{ active: data.selectedSection === 'experience' }"
 				@click="showSection('experience')">
 				Experience
@@ -29,7 +29,7 @@
 							<div
 								class="flex flex-col w-1/2 items-start space-y-14">
 								<div class="content space-y-7">
-								<p class="text-default-white text-fine">
+								<p class="text-default-dark text-fine">
 									Hey there! I'm Jessica Turner, a developer
 									based in the Bay Area, and I absolutely love
 									what I do. Lucky, right!? I find immense
@@ -40,7 +40,7 @@
 									dynamic, and user-centric products.
 								</p>
 
-								<p class="text-default-white text-fine">
+								<p class="text-default-dark text-fine">
 									With over two years of professional
 									experience, I've honed my skills in Vue,
 									Nuxt, and WordPress to create high-quality
@@ -53,22 +53,22 @@
 								<div class="bullet-section">
 									<ul class="flex flex-row flex-wrap items-start w-[110%] custom">
 										<li class="w-1/2 pb-14 ">
-											<h3 class="text-light-peach">Experience</h3>
-											<p class="text-light-purple ml-[40px]"> 2+ years</p>
+											<h3 class="text-dark-purple">Experience</h3>
+											<p class="text-dark-purple ml-[40px]"> 2+ years</p>
 										</li>
 										<li class="pb-14 ">
-											<h3 class="text-light-peach">Location</h3>
-												<p class="text-light-purple ml-[40px]"> Bay Area, CA</p>
+											<h3 class="text-dark-purple">Location</h3>
+												<p class="text-dark-purple ml-[40px]"> Bay Area, CA</p>
 										</li>
 										<li class="w-1/2 ">
-											<h3 class="text-light-peach">Hobbies</h3>
-												<p class="text-light-purple ml-[40px]">			Reading, baking, crafting, card games (esp. UNO)</p>
+											<h3 class="text-dark-purple">Hobbies</h3>
+												<p class="text-dark-purple ml-[40px]">			Reading, baking, crafting, card games (esp. UNO)</p>
 										</li>
 									</ul>
 								</div>
 								<div class="flex flex-col items-start justify-start space-y-7 ml-[40px]">
-									<h2 class=text-light-peach> Want to learn more?</h2>
-								<SvgButton link="#" goTo="/contact" label="Contact" cssClass="bg-light-peach"/>
+									<h2 class=text-dark-purple> Want to learn more?</h2>
+								<SvgButton link="#" goTo="/contact" label="Contact" cssClass="bg-dark-purple"/>
 							</div>
 						</div>
 
@@ -101,15 +101,15 @@
 										</li>
 										<li class="w-1/2 pb-14 pr-7 ">
 											<h3 class="text-light-peach">design</h3>
-											<p class="text-light-purple ml-[40px]">Wireframing, prototyping, Adobe Creative Suite, Figma</p>
+											<p class="text-medium-purple ml-[40px]">Wireframing, prototyping, Adobe Creative Suite, Figma</p>
 										</li>
 										<li class="w-1/2 pb-14 pr-7 ">
 											<h3 class="text-light-peach">Development</h3>
-												<p class="text-light-purple ml-[40px]"> JavaScript(ES6+), API, Vue, Nuxt, WordPress</p>
+												<p class="text-medium-purple ml-[40px]"> JavaScript(ES6+), API, Vue, Nuxt, WordPress</p>
 										</li>
 										<li class="w-1/2 pb-14 pr-7">
 											<h3 class="text-light-peach">Tools</h3>
-												<p class="text-light-purple ml-[40px]">Git/GitHub, Sourcetree, Azure, Chrome DevTools, FTP Client, Postman, MongoDB</p>
+												<p class="text-medium-purple ml-[40px]">Git/GitHub, Sourcetree, Azure, Chrome DevTools, FTP Client, Postman, MongoDB</p>
 										</li>
 										<li class="w-1/2 pb-14 ">
 											<h3 class="text-light-peach">Soft skills</h3>

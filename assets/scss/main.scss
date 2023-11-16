@@ -1,5 +1,5 @@
-@import "@/assets/scss/variables.scss";
 
+@import "@/assets/scss/variables.scss";
 
 @font-face {
 	font-family: 'Material Symbols Outlined';
@@ -24,6 +24,7 @@ h4 {
 
 h3 {
 	text-transform: uppercase;
+	font-weight: 100;
 }
 
 p {
@@ -214,8 +215,11 @@ header.main {
 	top: 0;
 	width: 100%;
 	transition: background-color .5s ease;
-	// background-color: $light-peach;
+
 	background-color:rgba($default-white, .5);
+	&.mobile-menu-open{
+		background-color: transparent;
+	}
 
 
 	&.sticky-header {
@@ -247,6 +251,9 @@ header.main {
 	h4 {
 		font-family: "Hepta slab", sans-serif;
 	}
+	.mobile-nav-trigger{
+
+	}
 }
 
 
@@ -254,7 +261,7 @@ header.main {
 .mobile-menu {
 	position: fixed;
 	top: 100px;
-	z-index: 10;
+
 	background: $default-dark;
 	border-radius: 12px 0 0 12px;
 	overflow-y: hidden;
@@ -288,7 +295,7 @@ header.main {
 		height: 100vh;
 		opacity: 0.95;
 		justify-content: flex-start;
-		z-index: 20;
+
 		padding: 120px 20px;
 	}
 
@@ -414,23 +421,27 @@ section.hero {
 
 	}
 	.text-container{
+position: absolute;
 		transform: translate(-50%, -50%);
 		width: 80vmin;
 		height: 80vmin;
-		background: rgba(255,255,255, .1);
+		background: rgba(255, 255, 255, .1);
 		border-radius: 100%;
 		box-shadow: inset 0px 0px 30px 30px rgba(200, 200, 200, 0.1);
 		left: 50%;
-		top: 50%;
-
+		top: 55%;
+		@screen lg{
+			width: 70vmin;
+		height: 70vmin;
+		}
 	}
 
 
 
-
-
-
-
+svg{
+	position: absolute;
+transform: translate(25%,25%);
+}
 
 }
 

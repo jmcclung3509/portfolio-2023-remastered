@@ -9,7 +9,7 @@
 				>
 				<div
 					class="text-container flex flex-col space-y-2 absolute z-100 top-0 bottom-0 left-0 right-0 flex justify-center items-center">
-					<h2 class="text-light-peach text-1.5xl lg:text-2xl">
+					<h2 class="text-light-peach text-1.5xl xl:text-2xl">
 						{{ props.title }}
 					</h2>
 				</div>

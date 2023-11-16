@@ -3,7 +3,7 @@
 		<div class="container m-auto flex justify-between items-center z-10 w-full">
 			<div class="left flex items-center justify-center gap-4">
 				<Nuxt-Link to="/">
-				<SVGBee/>
+		<img class="h-[70px]" src="@/assets/images/home/circle-avatar.svg" alt="avatar"/>
 				</Nuxt-Link>
 				<Nuxt-Link to="/">
 					<h4 v-show="!['sm', 'md'].includes(size)"
