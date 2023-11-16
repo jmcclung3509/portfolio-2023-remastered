@@ -73,7 +73,7 @@
 						</div>
 
 							<div class="w-1/2  ">
-								<div class="image-container w-3/4 pb-[75%] mx-auto">
+								<div class="image-container w-3/4 pb-[75%] mx-auto ">
 								<img
 									class="w-full "
 									src="@/assets/images/home/headshot.png"

@@ -11,7 +11,8 @@ $orange: #FF7442;
 
 
 //linear-gradients
-$linear-gradient-1: linear-gradient(149.25deg, $default-white 16.85%, $light-peach 41.61%, $light-purple 84.39%);
+$linear-gradient-1: linear-gradient(149.25deg, $light-peach , $extra-light-purple,  $light-purple );
+
 
 $linear-gradient-2: linear-gradient($medium-purple, $dark-purple);
 $linear-gradient-3: linear-gradient(45deg, $medium-purple, $dark-purple);

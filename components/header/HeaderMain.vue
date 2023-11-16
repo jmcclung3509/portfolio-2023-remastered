@@ -4,7 +4,7 @@
 		<div class="container m-auto flex justify-between items-center w-full">
 			<div class="left flex items-center justify-center gap-2 lg:gap-4">
 				<Nuxt-Link to="/">
-				<SVGBee/>
+		<img class="h-[70px]" src="@/assets/images/home/computer-avatar-stand.svg" alt="avatar"/>
 				</Nuxt-Link>
 				<Nuxt-Link to="/">
 					<h4 v-show="!['sm', 'md'].includes(size)"
@@ -28,9 +28,13 @@
 							<a href="/contact" class="animate-underline orange"
 								>Contact</a>
 						</li>
+						<li class="relative p-2" >
+							<a href="https://resume.io/r/FY7HX7IvG" target="_blank" class="animate-underline orange"
+								>Resume</a>
+						</li>
 						<li class="relative p-2 ">
 
-					<SvgButton label="Resume" link="https://resume.io/r/FY7HX7IvG" cssClass="bg-border-gradient" />
+
 						</li>
 					</ul>
 

@@ -2,9 +2,10 @@
 	<main class="relative light-section">
 		<section
 			class="section  fold hero light flex justify-center items-center relative">
+
 			<div
-				class="flex flex-col space-y-4 lg:space-y-7 mt-[-200px] mb-14 xl:mt-[-300px] container mx-auto text-container items-center py-7"
-				id="text-container">
+				class=" flex flex-col space-y-7 lg:space-y-14  container mx-auto text-container items-start justify-center absolute t p-7 px-28"
+			>
 				<h1
 					class="text-2xl lg:text-3xl xl:text-4xl xxl:text-5xl text-center">
 
@@ -24,19 +25,7 @@
 					>
 				</div>
 			</div>
-			<div
-				class="svg-container"
-				id="svg-container">
-				<template v-if="!isMobile">
-					<SVGAvatar />
-				</template>
 
-				<template v-else>
-					<img
-						class=""
-						src="@/assets/images/home/mobile-avatar-2.png" />
-				</template>
-			</div>
 		</section>
 		<section class="section info bg-default-dark dark">
 			<div class="animate container mx-auto py-36 space-y-4">
@@ -106,7 +95,7 @@
 			</div>
 		</section>
 		<section
-			class="section animate bg-default-dark dark relative contact space-y-14">
+			class="section animate bg-default-dark dark relative contact space-y-14 mt-[-60px]">
 			<div
 				class="mx-auto contact-container w-full absolute top-[-50px] left-0 right-0">
 				<div
@@ -190,31 +179,17 @@ useHead({
 
 import "@/assets/css/tailwind.css";
 
-const textContainer = ref(null);
-const svgContainer = ref(null);
-const svgContainerHeight = ref("auto");
-
-// Function to set the SVG container's height based on the text container's height
-const updateSvgContainerHeight = () => {
-	if (textContainer.value && svgContainer.value) {
-		svgContainerHeight.value = `${textContainer.value.clientHeight}px`;
-	}
-};
-
-onMounted(() => {
-	updateSvgContainerHeight();
-
-});
+const {bubbleLifeTime} = useBubbles()
 
 
 
-watchEffect(() => {
-	updateSvgContainerHeight();
-});
+
+
+
 
 const data = reactive({
 	mobileMenuOpen: false,
-	heroText1: "Hi, I'm Jessica."
+
 });
 
 const formattedHeroText = computed(()=>{
@@ -283,6 +258,7 @@ const quizzicalButtons = [
   opacity: 0;
 
 }
+
 
 
 

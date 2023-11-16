@@ -200,3 +200,56 @@ export default function useDropdownTransition(element) {
 		onAfterLeave,
 	}
 }
+
+export function useBubbles() {
+	const bubbleLifeTime = ref(20);
+	const noOfBubbles = 100;
+	const bubbles = ref([]);
+
+const init=()=> {
+	  const wrapper = document.querySelector('section.hero');
+	  let bubble;
+	  for (let i = 0; i < noOfBubbles; i++) {
+		bubble = createBubble();
+		wrapper.appendChild(bubble);
+	  }
+	}
+
+const createBubble=()=> {
+	  const circleContainer = document.createElement('div');
+	  circleContainer.classList.add('circle_container');
+	  circleContainer.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+
+	  const circle = createCircle();
+	  circleContainer.appendChild(circle);
+
+	  return circleContainer;
+	}
+
+const  createCircle=()=> {
+	const circle = document.createElement('div');
+  circle.classList.add('circle');
+
+  // Randomly generate a number between 1 and 4 to assign circle classes
+  const randomCircleClass = Math.floor(Math.random() * 5) + 1;
+  circle.classList.add(`circle-${randomCircleClass}`);
+
+  circle.style.animationDelay = `${Math.random() * bubbleLifeTime.value}s`;
+
+  const side = `${5 + Math.floor(Math.random() * 5)}px`;
+  circle.style.width = side;
+  circle.style.height = side;
+
+  return circle;
+	}
+
+	onMounted(() => {
+	  init();
+	});
+
+	return {
+	  bubbleLifeTime,
+	  bubbles,
+
+	};
+  }
