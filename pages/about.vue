@@ -1,26 +1,23 @@
 <template>
-	<section class="section info bg-light-peach">
-			<div class="animate container mx-auto py-36 space-y-4">
-				<template v-if="!isMobile">
+	<section class="section info bg-light-peach container mx-auto py-36 space-y-4">
+
 					<SkillMain />
-				</template>
-				<template v-else>
-					<SkillMobile />
-				</template>
-			</div>
+
 		</section>
 		<section
 			class="section animate bg-default-dark dark relative contact space-y-14 mt-[-60px]">
 			<div
 				class="mx-auto contact-container w-full absolute top-[-50px] left-0 right-0">
-				<div
-					class="animated-btn contact h-[100px] w-1/6 min-w-fit p-4 z-100 mx-auto rounded-2xl flex flex-col items-center justify-center space-y-4 button">
-					<Nuxt-link
-						to="/contact"
-						class="inner-button text-light-peach text-2xl">
-						Let's chat!</Nuxt-link
+				<Nuxt-link
+				to="/contact"
+					class=" contact h-[100px] w-1/5 min-w-fit p-4 z-100 mx-auto rounded-2xl flex flex-col items-center justify-center space-y-4 button">
+
+					<p
+
+						class="inner-button text-light-peach text-1.5xl">
+						Let's connect!</p
 					>
-				</div>
+	</Nuxt-link>
 			</div>
 
 			<div class="container mx-auto pt-36 space-y-7">
@@ -57,7 +54,7 @@
 					</a>
 				</div>
 				<div class="flex justify-center pt-14">
-					<p class="text-[12px] caps text-light-purple font-light">
+					<p class="text-[12px] caps text-light-purple font-light text-center">
 						Designed & developed by me using Adobe Illustrator,
 						Figma, Vue, Nuxt and Tailwind 💜 2023
 					</p>

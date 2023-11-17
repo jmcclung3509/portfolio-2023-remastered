@@ -8,8 +8,8 @@
 	  >
 		<defs>
 		  <linearGradient id="mix-color">
-			<stop offset="0%" stop-color="#FF7442" />
-			<stop offset="100%" stop-color="#7F4EC3" />
+			<stop offset="0%" :stop-color="startColor" />
+          <stop offset="100%" :stop-color="endColor" />
 		  </linearGradient>
 		</defs>
 		<rect
@@ -49,9 +49,18 @@
 	link: String,
 	label: String,
 	goTo: String,
+	//cssClas=text-color
 	cssClass: {
 		type:String,
 		default: 'gradient-text'
+	},
+	startColor: {
+		type: String,
+		default: "#ff7442"
+	},
+	endColor: {
+		type: String,
+		default: '#7f4ec3'
 	}
   });
   </script>
@@ -62,9 +71,9 @@
   .btn {
 	width: 150px;
 	height: 70px;
-	display: flex; // Use flexbox for vertical centering
-	align-items: center; // Vertically center the content
-	justify-content: center; // Horizontally center the content
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: none;
 	position: relative;
 	border: none;

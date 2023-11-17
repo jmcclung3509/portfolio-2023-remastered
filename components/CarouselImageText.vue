@@ -1,8 +1,8 @@
 <template>
 	<div
-		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full  lg:space-x-14">
+		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full  lg:space-x-14 container">
 		<div
-			class="image-container w-full lg:w-[45%]   mx-auto relative rounded-2xl">
+			class="image-container w-full  mx-auto relative rounded-2xl">
 			<client-only>
 				<Swiper
 					:modules="data.modules"
@@ -18,7 +18,7 @@
 						:key="i">
 						<template v-if="item.type === 'video/mp4'">
 							<video
-								class="video rounded-2xl"
+								class="video rounded-2xl max-h-[600px] mx-auto"
 								autoplay="autoplay"
 								loop="loop"
 								muted="muted">

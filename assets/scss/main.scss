@@ -1,4 +1,3 @@
-
 @import "@/assets/scss/variables.scss";
 
 @font-face {
@@ -10,21 +9,20 @@
 body {
 	background-color: $light-peach;
 	color: $default-dark;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	width: 100%;
 	font-display: swap;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: 'Hepta Slab', serif;
+h1{
+	font-family: 'Dancing script', serif;
 }
 
 h3 {
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 500;
+	font-size: 20px;
+
 }
 
 p {
@@ -216,8 +214,9 @@ header.main {
 	width: 100%;
 	transition: background-color .5s ease;
 
-	background-color:rgba($default-white, .5);
-	&.mobile-menu-open{
+	background-color: rgba($default-white, .8);
+
+	&.mobile-menu-open {
 		background-color: transparent;
 	}
 
@@ -249,11 +248,10 @@ header.main {
 	}
 
 	h4 {
-		font-family: "Hepta slab", sans-serif;
+		font-family: "Dancing script", serif;
 	}
-	.mobile-nav-trigger{
 
-	}
+	.mobile-nav-trigger {}
 }
 
 
@@ -399,7 +397,7 @@ header.main {
 
 //Hero{
 section.hero {
-	background-image: url('@/assets/images/home/sergey-pesterev-JV78PVf3gGI-unsplash.jpg') ;
+	background-image: url('@/assets/images/home/sergey-pesterev-JV78PVf3gGI-unsplash.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -408,6 +406,9 @@ section.hero {
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
 	overflow: hidden;
+	@screen lg{
+		height: 110vh;
+	}
 
 	&:before {
 		content: "";
@@ -420,28 +421,75 @@ section.hero {
 		height: 100%;
 
 	}
-	.text-container{
-position: absolute;
-		transform: translate(-50%, -50%);
-		width: 80vmin;
-		height: 80vmin;
+
+	.text-container {
+		position: absolute;
+		transform: translate(-50%, -75%);
+		width: 90vmin;
+		height: 90vmin;
 		background: rgba(255, 255, 255, .1);
 		border-radius: 100%;
 		box-shadow: inset 0px 0px 30px 30px rgba(200, 200, 200, 0.1);
 		left: 50%;
 		top: 55%;
-		@screen lg{
-			width: 70vmin;
-		height: 70vmin;
+		@screen md{
+			transform: translate(-50%, -50%);
+			width: 80vmin;
+			height: 80vmin;
 		}
+
+		@screen lg {
+			transform: translate(-50%, -55%);
+			width: 65vmin;
+			height: 65vmin;
+		}
+
+	@screen xl {
+		width: 70vmin;
+		height: 70vmin;
 	}
-
-
-
-svg{
-	position: absolute;
-transform: translate(25%,25%);
 }
+.circle_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 10px;
+	transform-origin: left center;
+	.circle {
+	  position: absolute;
+	  border-radius: 100%;
+	  background: rgba(255, 255, 255, 0.3);
+	  left: 0;
+	  opacity: 0;
+	  animation-name: move;
+	  animation-duration: 20s;
+	  animation-iteration-count: infinite;
+	  &.circle-1{
+		  background: rgba($light-purple, .3);
+	  }
+	  &.circle-2{
+		  background: rgba($orange, .15);
+	  }
+	  &.circle-3{
+		  background: rgba($medium-purple, .3);
+		  }
+		  &.circle-4{
+			background: rgba($dark-purple, .15);
+		  }
+		  &.circle-5{
+			background: rgba($light-peach, .3);
+		  }
+		  &.circle-6{
+			background: rgba($extra-light-purple, .3);		  }
+	}
+  }
+
+
+
+	svg {
+		position: absolute;
+		transform: translate(25%, 25%);
+	}
 
 }
 
@@ -475,6 +523,7 @@ section.info {
 		}
 
 		&.active {
+			color: $orange;
 			&:before {
 				width: 100%;
 			}
@@ -493,19 +542,15 @@ section.info {
 			z-index: 30;
 			width: 100%;
 			border-radius: 0;
-
-
-
-		}
+				}
 
 		&:before {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 80%;
-			background-image: linear-gradient($default-dark, $default-dark),
+			background-image: linear-gradient( 45deg, $light-peach, $light-peach),
 				linear-gradient(45deg, $dark-purple, $orange);
-
 			border: 4px solid transparent;
 			background-origin: border-box;
 			background-clip: content-box, border-box;
@@ -515,37 +560,39 @@ section.info {
 			left: 25px;
 			top: 25px;
 			z-index: 20;
+			border-radius: 8px;
 		}
-		&:after{
+
+		&:after {
 			content: "";
-			background-image: linear-gradient($dark-purple, $orange);
+			border: 4px solid transparent;
+			background-image: linear-gradient(45deg, $orange, $medium-purple);
 			width: 100%;
 			height: 80%;
 			position: absolute;
 			left: 0px;
 			top: 0px;
-			opacity: .3;
+			opacity: .2;
 			z-index: 200;
 			transition: opacity .3s ease;
 		}
-		&:hover{
-			&:after{
+
+		&:hover {
+			&:after {
 				opacity: .1;
 			}
 		}
 
 
 	}
-
-
 }
+
+
+
 
 //Project section
 section.projects {
-	// background-image: $linear-gradient-1;
-	// background-size: 400% 400%;
-	// 	animation: gradient 15s ease infinite;
-	// 	background-position: center;
+
 
 	.front-box {
 		&.sitezeus {

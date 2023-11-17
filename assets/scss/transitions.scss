@@ -210,40 +210,7 @@
 }
 
 //HERO CIRCLE ANIMATION
-.circle_container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 10px;
-	transform-origin: left center;
-	.circle {
-	  position: absolute;
-	  border-radius: 100%;
-	  background: rgba(255, 255, 255, 0.3);
-	  left: 0;
-	  opacity: 0;
-	  animation-name: move;
-	  animation-duration: 20s;
-	  animation-iteration-count: infinite;
-	  &.circle-1{
-		  background: rgba($light-purple, .3);
-	  }
-	  &.circle-2{
-		  background: rgba($orange, .15);
-	  }
-	  &.circle-3{
-		  background: rgba($medium-purple, .3);
-		  }
-		  &.circle-4{
-			background: rgba($dark-purple, .15);
-		  }
-		  &.circle-5{
-			background: rgba($light-peach, .3);
-		  }
-		  &.circle-6{
-			background: rgba($extra-light-purple, .3);		  }
-	}
-  }
+
 
   @keyframes move {
 	0% {

@@ -26,19 +26,14 @@ export default defineNuxtConfig({
 
         },
         {
-          href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap",
-          rel: "stylesheet"
-        },
-        {
-          href: "https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@300;400;500;700&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair:opsz@5..1200&family=Work+Sans:wght@300&display=swap",
           rel: "stylesheet"
         },
 
         {
-          href: "https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap", rel: "stylesheet"
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         },
-
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" },
       ],
 
       noscript: [{ children: "Javascript is required" }],

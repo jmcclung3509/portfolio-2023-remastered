@@ -3,9 +3,9 @@
         <section
             class="section fold hero light flex justify-center items-center relative">
             <div
-                class="flex flex-col space-y-7 lg:space-y-14 container mx-auto text-container items-start justify-center  p-7 px-28">
+                class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 px-14">
 
-<h1 class="text-on-path text-1.5xl lg:text-3xl 3xl:text-3xl">
+<h1 class="text-3xl lg:text-6xl 3xl:text-7xl text-default-dark w-[150%]">
                 <span
                         v-for="(letter, index) in formattedHeroText"
                         class="letter"
@@ -18,18 +18,11 @@
                     class="text-1xl lg:text-1.5xl 3xl:text-2xl text-purple-dark appear">
                     I design and build things for the web.
                 </h2>
-                <div class="link-container animate-underline orange slide-in">
-                    <a
-                        href="#"
-                        class="text-dark-purple animate-arrow orange w-fit"
-                        data-go-to="projects"
-                        >Skip to projects</a
-                    >
-                </div>
+
             </div>
 
             <div class="flex justify-center pt-14 fixed bottom-5">
-                    <p class="text-[12px] caps text-light-purple font-light">
+                    <p class="text-[12px] caps text-light-purple font-light text-center">
                         Designed & developed by me using Adobe Illustrator,
                         Figma, Vue, Nuxt and Tailwind 💜 2023
                     </p>
@@ -76,58 +69,7 @@ const data = reactive({
 const formattedHeroText = computed(() => {
     return "Hi, I'm Jessica.".split("");
 });
-const insitesButtons = [
-    {
-        link: "https://insites.sitezeus.com",
-        label: "Live",
-    },
-    {
-        link: "/projects/insites",
-        label: "Learn more",
-    },
-];
-const nicksButtons = [
-    {
-        link: "https://deft-gingersnap-b9df5d.netlify.app/",
-        label: "Live",
-    },
-    {
-        link: "https://github.com/jmcclung3509/nuxt-nicks-restaurant",
-        label: "Repo",
-    },
-    {
-        link: "/projects/nicks",
-        label: "Learn more",
-    },
-];
-const stickyButtons = [
-    {
-        link: "https://super-sticky-notes.vercel.app/",
-        label: "Live",
-    },
-    {
-        link: "https://github.com/jmcclung3509/super-sticky-notes",
-        label: "Repo",
-    },
-    {
-        link: "/projects/sticky",
-        label: "Learn more",
-    },
-];
-const quizzicalButtons = [
-    {
-        link: "https://my-quizzical-app.vercel.app/",
-        label: "Live",
-    },
-    {
-        link: "https://github.com/jmcclung3509/quizzical_react_project_scrimba",
-        label: "Repo",
-    },
-    {
-        link: "/projects/quizzical",
-        label: "Learn more",
-    },
-];
+
 </script>
 
 <style lang="scss">

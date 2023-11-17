@@ -7,7 +7,7 @@
 				</Nuxt-Link>
 				<Nuxt-Link to="/">
 					<h4 v-show="!['sm', 'md'].includes(size)"
-					class="text-2xl pt-4"> Jessica Turner</h4>
+					class="text-1.5xl font-thin pt-4"> Jessica Turner</h4>
 				</Nuxt-Link>
 			</div>
 

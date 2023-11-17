@@ -3,12 +3,15 @@
 		:class="[{ 'sticky-header': isHeaderSticky , 'mobile-menu-open': data.mobileMenuOpen}]">
 		<div class="container m-auto flex justify-between items-center w-full">
 			<div class="left flex items-center justify-center gap-2 lg:gap-4">
-				<Nuxt-Link to="/">
-		<img class="h-[70px]" src="@/assets/images/home/circle-avatar.svg" alt="avatar"/>
-				</Nuxt-Link>
+				<Nuxt-Link to="/" class="h-[70px]">
+				<div class="avatar-container h-[70px]">
+					<SVGAvatar/>
+				</div>
+		<!-- <img class="h-[70px]" src="@/assets/images/home/circle-avatar.svg" alt="avatar"/>-->
+				 </Nuxt-Link>
 				<Nuxt-Link to="/">
 					<h4 v-show="!['sm', 'md'].includes(size)"
-					class="text-1.5xl font-light pt-4"> Jessica Turner</h4>
+					class="text-1.5xl font-light pt-4 ml-[60px]"> Jessica Turner</h4>
 				</Nuxt-Link>
 			</div>
 			<template v-if="!['sm', 'md'].includes(size)">
@@ -21,7 +24,7 @@
 						</li>
 
 						<li class="relative p-2">
-							<a href="/projects/project-home" class="animate-underline orange"
+							<a href="/projects/sitezeus" class="animate-underline orange"
 								>Projects</a>
 						</li>
 
