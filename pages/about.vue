@@ -1,11 +1,11 @@
 <template>
-	<section class="section info bg-light-peach container mx-auto py-36 space-y-4">
+	<section class="section info bg-default-dark dark py-36 space-y-4">
 
 					<SkillMain />
 
 		</section>
 		<section
-			class="section animate bg-default-dark dark relative contact space-y-14 mt-[-60px]">
+			class="section animate bg-light-peach  relative contact space-y-14 mt-[-60px]">
 			<div
 				class="mx-auto contact-container w-full absolute top-[-50px] left-0 right-0">
 				<Nuxt-link
@@ -25,12 +25,12 @@
 					<Yoda />
 
 					<p
-						class="quote w-full md:w-2/3 lg:w-1/2 mx-auto text-light-purple text-center">
+						class="quote w-full md:w-2/3 lg:w-1/2 mx-auto text-dark-purple text-center">
 						Pass on what you have learned. Strength, mastery,
 						hmmm... but weakness, folly, failure, also. Yes,
 						failure, most of all. The greatest teacher, failure is.
 					</p>
-					<p class="cite text-light-peach caps">&mdash; Yoda</p>
+					<p class="cite text-dark-purple caps">&mdash; Yoda</p>
 				</div>
 			</div>
 
@@ -42,14 +42,14 @@
 						href="https://github.com/jmcclung3509"
 						target="_blank">
 						<font-awesome-icon
-							class="social-icon text-1.5xl text-light-peach hover:text-dark-purple"
+							class="social-icon text-1.5xl text-dark-purple hover:text-orange"
 							:icon="['fab', 'github']"
 					/></a>
 					<a
 						href="https://www.linkedin.com/in/jessica-turner-94b549229/"
 						target="_blank">
 						<font-awesome-icon
-							class="social-icon text-1.5xl text-light-peach hover:text-dark-purple"
+							class="social-icon text-1.5xl text-ldark-purple hover:text-orange"
 							:icon="['fab', 'linkedin']" />
 					</a>
 				</div>

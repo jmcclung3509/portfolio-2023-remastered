@@ -9,13 +9,17 @@
 body {
 	background-color: $light-peach;
 	color: $default-dark;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	font-display: swap;
 }
 
 h1{
 	font-family: 'Dancing script', serif;
+
+}
+h2, h3, h4{
+	font-family: 'Work Sans', sans-serif;
 }
 
 h3 {
@@ -27,8 +31,9 @@ h3 {
 
 p {
 	font-size: 18px;
-	font-weight: 200;
+	font-weight: 100;
 	letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .caps {
@@ -214,7 +219,7 @@ header.main {
 	width: 100%;
 	transition: background-color .5s ease;
 
-	background-color: rgba($default-white, .8);
+	background-color: rgba($light-peach, .8);
 
 	&.mobile-menu-open {
 		background-color: transparent;
@@ -397,7 +402,7 @@ header.main {
 
 //Hero{
 section.hero {
-	background-image: url('@/assets/images/home/michael-jasmund-WCzUzA-uryA-unsplash.jpg');
+	background-image: url('@/assets/images/home/bubbles-3.jpeg');
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -405,15 +410,16 @@ section.hero {
 	height: 100vh;
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
-	
+
 
 
 	&:before {
 		content: "";
 		position: absolute;
-		background-image: linear-gradient(149.25deg, rgba($light-peach, .8), rgba($light-purple, .8), rgba($medium-purple, .8), rgba($dark-purple, .5));
-		background-size: 400% 400%;
-		animation: gradient 15s ease infinite;
+
+		background-image: linear-gradient(149.25deg, rgba($orange, .5),rgba($medium-purple, .6), rgba($dark-purple, .6));
+		background-size: 300% 300%;
+		animation: gradient 10s ease infinite;
 		background-position: center;
 		width: 100%;
 		height: 100%;
@@ -423,28 +429,28 @@ section.hero {
 	.text-container {
 		position: absolute;
 		transform: translate(-50%, -65%);
-		width: 60vmin;
-		height: 60vmin;
-		background: rgba(255, 255, 255, .1);
+		width: 80vmin;
+		height: 80vmin;
+		background: rgba($light-peach, .1);
 		border-radius: 100%;
-		box-shadow: inset 0px 0px 30px 30px rgba(200, 200, 200, 0.1);
+		box-shadow: inset 0px 0px 30px 30px rgba($light-peach, 0.1);
 		left: 50%;
 		top: 55%;
 		@screen md{
 			transform: translate(-50%, -50%);
-			width: 50vmin;
-			height: 50vmin;
+			width: 70vmin;
+			height: 70vmin;
 		}
 
 		@screen lg {
 			transform: translate(-50%, -55%);
-			width: 65vmin;
-			height: 65vmin;
+			width: 70vmin;
+			height: 70vmin;
 		}
 
 	@screen xl {
-		width: 50vmin;
-		height: 50vmin;
+		width: 60vmin;
+		height: 60vmin;
 	}
 }
 .circle_container {
@@ -456,7 +462,7 @@ section.hero {
 	.circle {
 	  position: absolute;
 	  border-radius: 100%;
-	  background: rgba(255, 255, 255, 0.1);
+	  background: rgba($default-white, .25);
 	  left: 0;
 	  opacity: 0;
 	  animation-name: move;
@@ -547,7 +553,7 @@ section.info {
 			position: absolute;
 			width: 100%;
 			height: 80%;
-			background-image: linear-gradient( 45deg, $light-peach, $light-peach),
+			background-image: linear-gradient( 45deg, $default-dark, $default-dark),
 				linear-gradient(45deg, $dark-purple, $orange);
 			border: 4px solid transparent;
 			background-origin: border-box;

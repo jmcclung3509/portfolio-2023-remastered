@@ -5,7 +5,7 @@
             <div
                 class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 ">
 
-<h1 class="text-3xl lg:text-6xl 3xl:text-7xl text-default-dark w-[300%]">
+<h1 class="text-3xl md:text-5xl lg:text-7xl 3xl:text-[8rem] text-default-dark w-[300%]">
                 <span
                         v-for="(letter, index) in formattedHeroText"
                         class="letter"
@@ -15,14 +15,14 @@
                     </span>
                 </h1>
                 <h2
-                    class="text-1xl lg:text-1.5xl 3xl:text-2xl text-purple-dark appear w-[200%]">
+                    class="text-1xl md:text-1.5xl 3xl:text-2xl text-purple-dark appear w-[200%]">
                     I design and build things for the web.
                 </h2>
 
             </div>
 
             <div class="flex justify-center pt-14 fixed bottom-5">
-                    <p class="text-[12px] caps text-default-dark font-light text-center">
+                    <p class="text-[12px] caps text-light-peach font-light text-center">
                         Designed & developed by me using Adobe Illustrator,
                         Figma, Vue, Nuxt and Tailwind 💜 2023
                     </p>

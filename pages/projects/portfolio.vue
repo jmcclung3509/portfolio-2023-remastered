@@ -28,6 +28,14 @@
 						v-if="slotProps.realIndex === 0">
 						<p>
 							My current portfolio is constructed using Vue, Nuxt,
+							and Tailwind. I reused many of the elements of my previous website, but updated the hero image with new animation, and restructured the layout for a more user-friendly experience.
+						</p>
+					</div>
+					<div
+					class="text-left space-y-4 lg:w-[80%] lg:mr-auto"
+						v-if="slotProps.realIndex === 1">
+						<p>
+							My previous portfolio, created early 2023, is constructed using Vue, Nuxt,
 							and Tailwind. The design process began in Figma, and
 							I crafted vector images using Adobe Illustrator.
 							Building my portfolio has been an enjoyable journey.
@@ -39,12 +47,19 @@
 							and user-friendly design, presenting information in
 							an organized, easily navigable format.
 						</p>
+						<div class="button-container flex flex-row gap-7 pt-7">
+							<SvgButton
+							cssClass="gradient-text"
+								label="Website"
+								link="https://portfolio-2023-v3.vercel.app/" />
+
+						</div>
 					</div>
 					<div
 						class="text-left space-y-4 lg:w-[80%] lg:mr-auto"
-						v-if="slotProps.realIndex === 1">
+						v-if="slotProps.realIndex === 2">
 						<p>
-							My previous website, dated 2022, was designed in
+							My first website, dated 2022, was designed in
 							Figma and constructed with Vanilla JavaScript and
 							Bootstrap. I embraced a clean and minimalist design
 							approach. This project represented one of my initial
@@ -74,6 +89,11 @@ definePageMeta({
 });
 
 const portfolioImages = [
+{
+		src: "/static/images/pages/project-pages/portfolio-v3-recording.mp4",
+		type: "video/mp4",
+		alt: "Portfolio v2",
+	},
 	{
 		src: "/static/images/pages/project-pages/portfolio-v2-recording.mp4",
 		type: "video/mp4",
