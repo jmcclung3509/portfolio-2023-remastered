@@ -2,7 +2,7 @@
 	<div
 		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full  lg:space-x-14 container">
 		<div
-			class="image-container w-full  mx-auto relative rounded-2xl">
+			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative pt-14 lg:pt-0">
 			<client-only>
 				<Swiper
 					:modules="data.modules"
@@ -120,35 +120,28 @@ const onSlideChange = (swiper) => {
 			&:before {
 
 				content: "Next";
-				right: 30px;
+				right: 100px;
 			}
 			&:after{
 				font-family: "Material Symbols Outlined";
 				content: "arrow_forward";
-				right: 10px;
+				right: 70px;
 			}
 
 		}
 		&.custom-prev {
 			&:before {
 				content: "Previous";
-				left: 30px;
+				left: 100px;
 
 			}
 			&:after{
 				font-family: "Material Symbols Outlined";
 				content: "arrow_back";
-				left: 10px;
+				left: 70px;
 			}
 		}
 	}
 }
-.image-container{
-	padding-top: 50px;
-	width: 100%;
-	@screen md{
-		padding-top: unset;
-		width: 45%;
-	}
-}
+
 </style>
