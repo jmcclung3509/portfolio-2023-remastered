@@ -405,10 +405,8 @@ section.hero {
 	height: 100vh;
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
-	overflow: hidden;
-	@screen lg{
-		height: 110vh;
-	}
+	
+
 
 	&:before {
 		content: "";

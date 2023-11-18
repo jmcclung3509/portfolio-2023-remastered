@@ -22,7 +22,7 @@
             </div>
 
             <div class="flex justify-center pt-14 fixed bottom-5">
-                    <p class="text-[12px] caps text-light-purple font-light text-center">
+                    <p class="text-[12px] caps text-default-dark font-light text-center">
                         Designed & developed by me using Adobe Illustrator,
                         Figma, Vue, Nuxt and Tailwind 💜 2023
                     </p>

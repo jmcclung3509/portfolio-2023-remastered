@@ -10,7 +10,7 @@
 		<div
 			class="container mx-auto space-y-14 flex flex-col mt-48 space-y-7">
 			<h2 class="text-orange text-2xl flex justify-center">Insites</h2>
-			<p class="w-[90%] lg:w-[60%] mx-auto ">
+			<p class="lg:w-[80%] w-full mx-auto ">
 				The Insites website, serving as SiteZeus.com's blog, is built on
 				the WordPress platform using PHP, vanilla JavaScript, and Sass.
 				My responsibilities include the ongoing maintenance of WordPress
