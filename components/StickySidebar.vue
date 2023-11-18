@@ -38,13 +38,13 @@
 	.social-icon{
 		color:$default-dark;
 		&.light{
-			color: $light-purple;
+			color: $light-peach;
 		}
 	}
 	.sidebar-line{
 		background-color: $default-dark;
 		&.light{
-			background-color: $light-purple;
+			background-color: $light-peach;
 		}
 	}
 

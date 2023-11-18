@@ -1,7 +1,7 @@
 <template>
-    <main class="relative light-section">
+    <main class="relative ">
         <section
-            class="section fold hero light flex justify-center items-center relative">
+            class="section fold hero flex justify-center items-center relative dark">
             <div
                 class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 ">
 

@@ -12,7 +12,6 @@ export const useScroll = () => {
 	const colorScrollContainer = ref<HTMLElement | null>(null);
 
 	const handleScroll = () => {
-	  // ... (your existing code)
 
 	  const socialIcons = document.querySelectorAll(".social-icon");
 
@@ -21,7 +20,7 @@ export const useScroll = () => {
 
 	  socialIcons.forEach((icon) => {
 		const iconRect = icon.getBoundingClientRect();
-		const darkSections = document.querySelectorAll(".section.dark");
+		const darkSections = document.querySelectorAll(".dark");
 
 		let isDark = false;
 
