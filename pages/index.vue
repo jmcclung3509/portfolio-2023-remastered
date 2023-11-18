@@ -3,9 +3,9 @@
         <section
             class="section fold hero light flex justify-center items-center relative">
             <div
-                class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 px-14">
+                class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 ">
 
-<h1 class="text-3xl lg:text-6xl 3xl:text-7xl text-default-dark w-[150%]">
+<h1 class="text-3xl lg:text-6xl 3xl:text-7xl text-default-dark w-[300%]">
                 <span
                         v-for="(letter, index) in formattedHeroText"
                         class="letter"
@@ -15,7 +15,7 @@
                     </span>
                 </h1>
                 <h2
-                    class="text-1xl lg:text-1.5xl 3xl:text-2xl text-purple-dark appear">
+                    class="text-1xl lg:text-1.5xl 3xl:text-2xl text-purple-dark appear w-[200%]">
                     I design and build things for the web.
                 </h2>
 
