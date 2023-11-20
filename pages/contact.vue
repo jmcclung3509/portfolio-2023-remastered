@@ -28,7 +28,7 @@
 							id="message" name="message" required />
 					</div>
 
-					<input class="submit flex justify-center button hollow  purple-orange  mx-auto" type="submit"
+					<input class="submit flex justify-center button hollow  purple-orange  mx-auto font-light" type="submit"
 						value="Submit" />
 				</form>
 			</div>
