@@ -54,7 +54,8 @@
 	animation-delay: 3s;
 	opacity: 0;
 }
-.appear{
+
+.appear {
 	opacity: 0;
 	animation: appear 1s forwards;
 	animation-delay: 2s;
@@ -175,35 +176,41 @@
 		// transform: scale(1)
 	}
 }
+
 @keyframes slideDownAnimation {
 	from {
-	  transform: scaleY(0);
+		transform: scaleY(0);
 
 	}
+
 	to {
-	  transform: scaleY(1);
-	  opacity: 1;
+		transform: scaleY(1);
+		opacity: 1;
 	}
-  }
+}
 
-  @keyframes appear{
-	from{
+@keyframes appear {
+	from {
 		transition: all 1s ease;
 		transform: translateY(-10px);
 		opacity: 0;
 	}
-	to{
+
+	to {
 		transform: translateY(0);
-		opacity: .8;
+		opacity: 1;
 	}
-  }
-  @keyframes gradient {
+}
+
+@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -212,22 +219,22 @@
 //HERO CIRCLE ANIMATION
 
 
-  @keyframes move {
+@keyframes move {
 	0% {
-	  transform: translateX(0px);
-	  opacity: 0;
+		transform: translateX(0px);
+		opacity: 0;
 	}
 
 	1% {
-	  opacity: 1;
+		opacity: 1;
 	}
 
 	50% {
-	  opacity: 0.5;
+		opacity: 0.5;
 	}
 
 	100% {
-	  transform: translateX(70vmin);
-	  opacity: 0;
+		transform: translateX(70vmin);
+		opacity: 0;
 	}
-  }
+}

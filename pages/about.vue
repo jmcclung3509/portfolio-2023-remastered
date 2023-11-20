@@ -1,66 +1,50 @@
 <template>
 	<section class="section info bg-default-dark dark py-36 space-y-4">
 
-					<SkillMain />
+		<SkillMain />
 
-		</section>
-		<section
-			class="section animate bg-light-peach  relative contact space-y-14 mt-[-60px]">
-			<div
-				class="mx-auto contact-container w-full absolute top-[-50px] left-0 right-0">
-				<Nuxt-link
-				to="/contact"
-					class=" contact h-[100px] w-1/5 min-w-fit p-4 z-100 mx-auto rounded-2xl flex flex-col items-center justify-center space-y-4 button">
+	</section>
+	<section class="section animate bg-light-peach light relative contact space-y-7 mt-[-60px]">
+		<div class="mx-auto contact-container w-full absolute top-[-50px] left-0 right-0">
+			<Nuxt-link to="/contact"
+				class=" contact h-[100px] w-1/5 min-w-fit p-4 z-100 mx-auto rounded-2xl flex flex-col items-center justify-center space-y-4 button">
 
-					<p
+				<p class="inner-button text-light-peach text-1.5xl">
+					Let's connect!</p>
+			</Nuxt-link>
+		</div>
 
-						class="inner-button text-light-peach text-1.5xl">
-						Let's connect!</p
-					>
-	</Nuxt-link>
+		<div class="pt-[50px]">
+			<div class="flex flex-col space-y-4 items-center">
+				<Yoda />
+
+				<h4 class="quote w-full md:w-2/3 lg:w-1/2 mx-auto text-dark-purple text-center text-light">
+					Pass on what you have learned. Strength, mastery,
+					hmmm... but weakness, folly, failure, also. Yes,
+					failure, most of all. The greatest teacher, failure is.
+				</h4>
+				<p class="cite text-dark-purple caps">&mdash; Yoda</p>
 			</div>
+		</div>
 
-			<div class="container mx-auto pt-36 space-y-7">
-				<div class="flex flex-col space-y-7 items-center">
-					<Yoda />
 
-					<p
-						class="quote w-full md:w-2/3 lg:w-1/2 mx-auto text-dark-purple text-center">
-						Pass on what you have learned. Strength, mastery,
-						hmmm... but weakness, folly, failure, also. Yes,
-						failure, most of all. The greatest teacher, failure is.
-					</p>
-					<p class="cite text-dark-purple caps">&mdash; Yoda</p>
-				</div>
-			</div>
+		<div class="social-icons flex flex-row justify-center gap-7">
+			<a href="https://github.com/jmcclung3509" target="_blank">
+				<font-awesome-icon class="social-icon text-1.5xl text-dark-purple hover:text-orange"
+					:icon="['fab', 'github']" /></a>
+			<a href="https://www.linkedin.com/in/jessica-turner-94b549229/" target="_blank">
+				<font-awesome-icon class="social-icon text-1.5xl text-dark-purple hover:text-orange"
+					:icon="['fab', 'linkedin']" />
+			</a>
+		</div>
+		<div class="flex justify-center pt-4">
+			<p class="text-[12px] caps text-default-dark font-light text-center">
+				Designed & developed by me using Adobe Illustrator,
+				Figma, Vue, Nuxt and Tailwind 💜 2023
+			</p>
+		</div>
 
-			<div class="container mx-auto animate space-y-7">
-				<div
-					class="social-icons flex flex-row justify-center gap-7"
-					v-show="['sm', 'md'].includes(size)">
-					<a
-						href="https://github.com/jmcclung3509"
-						target="_blank">
-						<font-awesome-icon
-							class="social-icon text-1.5xl text-dark-purple hover:text-orange"
-							:icon="['fab', 'github']"
-					/></a>
-					<a
-						href="https://www.linkedin.com/in/jessica-turner-94b549229/"
-						target="_blank">
-						<font-awesome-icon
-							class="social-icon text-1.5xl text-ldark-purple hover:text-orange"
-							:icon="['fab', 'linkedin']" />
-					</a>
-				</div>
-				<div class="flex justify-center pt-14">
-					<p class="text-[12px] caps text-default-dark font-light text-center">
-						Designed & developed by me using Adobe Illustrator,
-						Figma, Vue, Nuxt and Tailwind 💜 2023
-					</p>
-				</div>
-			</div>
-		</section>
+	</section>
 </template>
 
 <script setup>
@@ -70,9 +54,9 @@ const { isMobile } = useScreenSize();
 </script>
 
 <style lang="scss">
-
 @import "@/assets/scss/variables.scss";
-header.main{
+
+header.main {
 	background: $light-peach;
 }
 </style>

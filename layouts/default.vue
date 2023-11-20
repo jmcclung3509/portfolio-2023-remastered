@@ -1,19 +1,19 @@
 <template>
 	<Html lang="en">
-		<Body :class="['page-' + route.name]">
-			<Overlay></Overlay>
-			<div
-				class="relative flex flex-wrap"
-				:class="{ 'mobile-menu-open': isMobileMenuOpen}">
-				<HeaderMain @mobileMenuClick="onMobileMenuClick" />
-				<div class="wrap-inner w-full overflow-hidden">
-					<StickySidebar />
-					<slot />
-				</div>
 
+	<Body :class="['page-' + route.name]">
+		<Overlay></Overlay>
+		<div class="relative flex flex-wrap" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
+			<HeaderMain @mobileMenuClick="onMobileMenuClick" />
+			<div class="wrap-inner w-full overflow-hidden">
+				<!-- <StickySidebar /> -->
+				<slot />
 			</div>
-			<HeaderMobileMenu :class="{ 'mobile-menu-open': isMobileMenuOpen }"></HeaderMobileMenu>
-		</Body>
+
+		</div>
+		<HeaderMobileMenu :class="{ 'mobile-menu-open': isMobileMenuOpen }"></HeaderMobileMenu>
+	</Body>
+
 	</Html>
 </template>
 

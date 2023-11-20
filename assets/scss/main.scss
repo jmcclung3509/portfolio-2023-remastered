@@ -14,18 +14,33 @@ body {
 	font-display: swap;
 }
 
-h1{
+h1 {
 	font-family: 'Dancing script', serif;
 
 }
-h2, h3, h4{
-	font-family: 'Work Sans', sans-serif;
+
+h2,
+h3 {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+	font-weight: 300;
 }
 
 h3 {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 20px;
+
+}
+
+h4 {
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	letter-spacing: 1px;
 
 }
 
@@ -111,7 +126,7 @@ ul.custom {
 	transform: translateY(0);
 	transition: all .5s;
 	opacity: 0.8;
-	background-image: linear-gradient(45deg, $light-purple, $medium-purple);
+	background-image: linear-gradient(45deg, $medium-purple, $light-purple);
 
 	&.hollow {
 		position: relative;
@@ -140,10 +155,9 @@ ul.custom {
 
 
 		&.purple-orange {
-			background-image: linear-gradient($default-dark, $default-dark), linear-gradient(45deg, $dark-purple, $orange);
+			background: linear-gradient($default-dark, $default-dark) padding-box, linear-gradient(45deg, $dark-purple, $orange) border-box;
 			color: $light-peach;
-			// width: 150px;
-			// height: 60px;
+
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -153,12 +167,12 @@ ul.custom {
 			}
 
 
-			&:hover {
-				background-image: linear-gradient(45deg, $medium-purple, $orange);
-				color: $default-white;
-				border: 2px solid $dark-purple;
+			// &:hover {
+			// 	background-image: linear-gradient(45deg, $medium-purple, $orange);
+			// 	color: $default-white;
+			// 	border: 2px solid $dark-purple;
 
-			}
+			// }
 		}
 
 	}
@@ -417,7 +431,7 @@ section.hero {
 		content: "";
 		position: absolute;
 
-		background-image: linear-gradient(149.25deg, rgba($orange, .5),rgba($medium-purple, .6), rgba($dark-purple, .6));
+		background-image: linear-gradient(149.25deg, rgba($orange, .5), rgba($medium-purple, .6), rgba($dark-purple, .6));
 		background-size: 300% 300%;
 		animation: gradient 10s ease infinite;
 		background-position: center;
@@ -436,7 +450,8 @@ section.hero {
 		box-shadow: inset 0px 0px 30px 30px rgba($light-peach, 0.1);
 		left: 50%;
 		top: 55%;
-		@screen md{
+
+		@screen md {
 			transform: translate(-50%, -50%);
 			width: 70vmin;
 			height: 70vmin;
@@ -448,45 +463,54 @@ section.hero {
 			height: 70vmin;
 		}
 
-	@screen xl {
-		width: 60vmin;
-		height: 60vmin;
+		@screen xl {
+			width: 60vmin;
+			height: 60vmin;
+		}
 	}
-}
-.circle_container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 10px;
-	transform-origin: left center;
-	.circle {
-	  position: absolute;
-	  border-radius: 100%;
-	  background: rgba($default-white, .25);
-	  left: 0;
-	  opacity: 0;
-	  animation-name: move;
-	  animation-duration: 20s;
-	  animation-iteration-count: infinite;
-	  &.circle-1{
-		  background: rgba($light-purple, .3);
-	  }
-	  &.circle-2{
-		  background: rgba($orange, .15);
-	  }
-	  &.circle-3{
-		  background: rgba($medium-purple, .3);
-		  }
-		  &.circle-4{
-			background: rgba($dark-purple, .15);
-		  }
-		  &.circle-5{
-			background: rgba($light-peach, .3);
-		  }
-		  &.circle-6{
-			background: rgba($extra-light-purple, .3);		  }
+
+	.circle_container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 10px;
+		transform-origin: left center;
+
+		.circle {
+			position: absolute;
+			border-radius: 100%;
+			background: rgba($default-white, .25);
+			left: 0;
+			opacity: 0;
+			animation-name: move;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+
+			&.circle-1 {
+				background: rgba($light-purple, .3);
+			}
+
+			&.circle-2 {
+				background: rgba($orange, .15);
+			}
+
+			&.circle-3 {
+				background: rgba($medium-purple, .3);
+			}
+
+			&.circle-4 {
+				background: rgba($dark-purple, .15);
+			}
+
+			&.circle-5 {
+				background: rgba($light-peach, .3);
+			}
+
+			&.circle-6 {
+				background: rgba($extra-light-purple, .3);
+			}
+		}
 	}
-  }
 
 
 
@@ -528,6 +552,7 @@ section.info {
 
 		&.active {
 			color: $orange;
+
 			&:before {
 				width: 100%;
 			}
@@ -546,14 +571,14 @@ section.info {
 			z-index: 30;
 			width: 100%;
 			border-radius: 0;
-				}
+		}
 
 		&:before {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 80%;
-			background-image: linear-gradient( 45deg, $default-dark, $default-dark),
+			background-image: linear-gradient(45deg, $default-dark, $default-dark),
 				linear-gradient(45deg, $dark-purple, $orange);
 			border: 4px solid transparent;
 			background-origin: border-box;
@@ -623,5 +648,11 @@ section.projects {
 		&.portfolio {
 			background: $overlay-gradient-dark, url("@/assets/images/project-images/portfolio.png");
 		}
+	}
+}
+
+body.page-contact {
+	header.main {
+		background: $light-peach;
 	}
 }

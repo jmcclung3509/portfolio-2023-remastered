@@ -1,27 +1,8 @@
 <template>
-	<svg
-		width="400"
-		height="400"
-		viewBox="0 0 400 400"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg">
-		<circle
-			class="face"
-			@mouseenter="data.faceIsHovering = true"
-			@mouseleave="data.faceIsHovering = false"
-			cx="200"
-			cy="200"
-			r="200"
-			fill="#FFF4F0"
-			fill-opacity="0.25" />
-		<mask
-			id="mask0_291_267"
-			style="mask-type: alpha"
-			maskUnits="userSpaceOnUse"
-			x="0"
-			y="0"
-			width="400"
-			height="400">
+	<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<circle class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false" cx="200"
+			cy="200" r="200" fill="#FFF4F0" fill-opacity="0.25" />
+		<mask id="mask0_291_267" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
 			<path
 				d="M400 200C400 310.457 310.457 400 200 400C89.5431 400 0 310.457 0 200C0 89.5431 89.5431 0 200 0C310.457 0 400 89.5431 400 200Z"
 				fill="#301F40" />
@@ -78,48 +59,30 @@
 			<path
 				d="M234.531 336.587C237.503 336.587 239.912 334.115 239.912 331.066C239.912 328.016 237.503 325.544 234.531 325.544C231.56 325.544 229.151 328.016 229.151 331.066C229.151 334.115 231.56 336.587 234.531 336.587Z"
 				fill="#FF7442" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M239.015 326.464C241.987 326.464 244.396 323.992 244.396 320.943C244.396 317.893 241.987 315.421 239.015 315.421C236.044 315.421 233.635 317.893 233.635 320.943C233.635 323.992 236.044 326.464 239.015 326.464Z"
 				fill="#FF7442" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M137.005 333.053C158.071 335.336 169.451 337.517 173.854 328.434C176.5 322.967 175.603 315.513 174.527 310.323C153.82 259.515 134.996 191.444 138.61 113.958C138.915 107.433 139.363 101.047 139.955 94.8072C135.66 93.8869 127.848 92.9206 120.145 96.7673C120.145 96.7673 110.711 101.488 104.63 115.034C96.3709 133.44 92.9899 216.907 96.2722 329.805C113.831 330.725 127.839 332.06 137.005 333.053Z"
 				fill="#FAF0B3" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M273.829 168.161C277.291 227.205 246.387 264.558 204.363 271.709C203.637 271.838 202.875 271.792 202.148 271.663C159.532 264.154 126.665 228.254 129.938 167.756C133.166 108.206 157.003 63.8956 204.363 63.8036C244.172 63.73 270.17 105.731 273.829 168.161Z"
 				fill="#EDBFA6" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M117.544 110.415C123.086 122.691 160.779 119.627 188.239 106.789C213.806 94.8348 240.298 69.8129 235.141 57.417C230.003 45.0579 194.167 47.1285 167.953 58.3005C139.211 70.5492 111.948 98.0465 117.535 110.415H117.544Z"
 				fill="#FAF0B3" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M278.295 137.047C271.533 140.701 252.225 123.575 240.944 107.47C230.119 92.0188 220.497 68.6534 226.523 63.6472C232.433 58.733 252.566 72.1964 264.709 88.2273C278.833 106.881 285.335 133.246 278.295 137.047Z"
 				fill="#FAF0B3" />
 			<path
 				d="M209.574 182.646C209.655 186.042 205.915 188.895 201.207 189.014C196.499 189.134 192.624 186.484 192.535 183.088"
-				stroke="#42210B"
-				stroke-miterlimit="10" />
+				stroke="#42210B" stroke-miterlimit="10" />
 			<path
 				d="M225.725 211.966C225.725 222.815 212.981 234.052 202.408 234.052C191.835 234.052 176.401 222.815 176.401 211.966"
 				fill="#FFFAFA" />
 			<path
 				d="M225.725 211.966C225.725 222.815 212.981 234.052 202.408 234.052C191.835 234.052 176.401 222.815 176.401 211.966"
-				stroke="#E35D6A"
-				stroke-width="2"
-				stroke-miterlimit="10" />
+				stroke="#E35D6A" stroke-width="2" stroke-miterlimit="10" />
 			<path
 				d="M263.336 326.078L239.123 315.035C237.329 310.185 235.536 305.335 233.742 300.485C250.503 249.098 261.094 188.269 254.01 121.66C253.391 115.817 252.647 110.065 251.795 104.424C255.947 96.0955 259.794 92.0556 263.336 92.3225C277.596 93.3992 286.868 164.259 291.137 304.903C281.873 311.961 272.6 319.01 263.336 326.069V326.078Z"
 				fill="#FAF0B3" />
@@ -144,23 +107,14 @@
 			<path
 				d="M178.141 303.992C171.863 311.05 165.586 318.099 159.308 325.158C154.761 323.842 140.099 318.946 130.61 303.992C125.929 296.62 124.162 289.406 123.436 284.666C135.695 283.442 147.946 282.209 160.205 280.985C166.186 288.651 172.159 296.326 178.141 303.992Z"
 				fill="#FAF0B3" />
-			<path
-				class="left-eye"
-				:class="{ hover: data.faceIsHovering }"
+			<path class="left-eye" :class="{ hover: data.faceIsHovering }"
 				d="M167.971 174.244C172.642 174.244 176.428 168.579 176.428 161.59C176.428 154.602 172.642 148.937 167.971 148.937C163.3 148.937 159.514 154.602 159.514 161.59C159.514 168.579 163.3 174.244 167.971 174.244Z"
 				fill="#006837" />
 			<path
 				d="M145.856 142.017C145.722 137.783 150.071 135.271 153.425 133.909C160.644 131.213 168.877 131.213 176.105 133.909C179.459 135.271 183.809 137.793 183.674 142.026C183.046 138.087 178.939 136.385 175.648 135.271C168.635 133.21 160.904 133.21 153.882 135.271C150.591 136.385 146.484 138.087 145.856 142.026V142.017Z"
 				fill="#B38B67" />
 		</g>
-		<mask
-			id="mask1_291_267"
-			style="mask-type: alpha"
-			maskUnits="userSpaceOnUse"
-			x="0"
-			y="0"
-			width="400"
-			height="400">
+		<mask id="mask1_291_267" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
 			<path
 				d="M400 200C400 310.457 310.457 400 200 400C89.5431 400 0 310.457 0 200C0 89.5431 89.5431 0 200 0C310.457 0 400 89.5431 400 200Z"
 				fill="#301F40" />
@@ -220,20 +174,13 @@
 			<path
 				d="M239.015 326.464C241.987 326.464 244.396 323.992 244.396 320.943C244.396 317.893 241.987 315.421 239.015 315.421C236.044 315.421 233.635 317.893 233.635 320.943C233.635 323.992 236.044 326.464 239.015 326.464Z"
 				fill="#FF7442" />
-			<path
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M137.005 333.053C158.071 335.336 169.451 337.517 173.854 328.434C176.5 322.967 175.603 315.513 174.527 310.323C153.82 259.515 134.996 191.444 138.61 113.958C138.915 107.433 139.363 101.047 139.955 94.8072C135.66 93.8869 127.848 92.9206 120.145 96.7673C120.145 96.7673 110.711 101.488 104.63 115.034C96.3709 133.44 92.9899 216.907 96.2722 329.805C113.831 330.725 127.839 332.06 137.005 333.053Z"
 				fill="#FAF0B3" />
-			<path class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M273.829 168.161C277.291 227.205 246.387 264.558 204.363 271.709C203.637 271.838 202.875 271.792 202.148 271.663C159.532 264.154 126.665 228.254 129.938 167.756C133.166 108.206 157.003 63.8956 204.363 63.8036C244.172 63.73 270.17 105.731 273.829 168.161Z"
 				fill="#EDBFA6" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M117.544 110.415C123.086 122.691 160.779 119.627 188.239 106.789C213.806 94.8348 240.298 69.8129 235.141 57.417C230.003 45.0579 194.167 47.1285 167.953 58.3005C139.211 70.5492 111.948 98.0465 117.535 110.415H117.544Z"
 				fill="#FAF0B3" />
 			<path
@@ -241,24 +188,14 @@
 				fill="#FAF0B3" />
 			<path
 				d="M209.574 182.646C209.655 186.042 205.915 188.895 201.207 189.014C196.499 189.134 192.624 186.484 192.535 183.088"
-				stroke="#42210B"
-				stroke-miterlimit="10" />
-			<path class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+				stroke="#42210B" stroke-miterlimit="10" />
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M225.725 211.966C225.725 222.815 212.981 234.052 202.408 234.052C191.835 234.052 176.401 222.815 176.401 211.966"
 				fill="#FFFAFA" />
-			<path class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M225.725 211.966C225.725 222.815 212.981 234.052 202.408 234.052C191.835 234.052 176.401 222.815 176.401 211.966"
-				stroke="#E35D6A"
-				stroke-width="6"
-				stroke-miterlimit="10" />
-			<path
-				class="face"
-				@mouseenter="data.faceIsHovering = true"
-				@mouseleave="data.faceIsHovering = false"
+				stroke="#E35D6A" stroke-width="6" stroke-miterlimit="10" />
+			<path class="face" @mouseenter="data.faceIsHovering = true" @mouseleave="data.faceIsHovering = false"
 				d="M263.336 326.078L239.123 315.035C237.329 310.185 235.536 305.335 233.742 300.485C250.503 249.098 261.094 188.269 254.01 121.66C253.391 115.817 252.647 110.065 251.795 104.424C255.947 96.0955 259.794 92.0556 263.336 92.3225C277.596 93.3992 286.868 164.259 291.137 304.903C281.873 311.961 272.6 319.01 263.336 326.069V326.078Z"
 				fill="#FAF0B3" />
 			<path
@@ -267,9 +204,7 @@
 			<path
 				d="M218.299 141.98C218.165 137.747 222.532 135.262 225.877 133.909C234.334 130.771 246.252 130.992 253.57 136.845C255.032 138.087 256.27 139.974 256.108 141.989C255.471 138.05 251.355 136.375 248.073 135.271C241.06 133.228 233.347 133.228 226.334 135.271C223.043 136.375 218.936 138.059 218.299 141.989V141.98Z"
 				fill="#B38B67" />
-			<path
-				class="left-eye"
-				:class="{ hover: data.faceIsHovering }"
+			<path class="left-eye" :class="{ hover: data.faceIsHovering }"
 				d="M176.578 150.337C171.413 145.892 165.817 144.99 160.122 149.048C154.974 152.288 148.813 151.551 143.388 149.416C145.63 151.073 148.93 151.956 151.871 152.186C154.92 152.389 157.988 151.349 160.49 149.683C161.763 148.892 162.965 148.036 164.319 147.53C168.525 145.873 173.108 147.695 176.524 150.41L176.578 150.337Z"
 				fill="#B38B67" />
 			<path
@@ -284,36 +219,19 @@
 			<path
 				d="M178.141 303.992C171.863 311.05 165.586 318.099 159.308 325.158C154.761 323.842 140.099 318.946 130.61 303.992C125.929 296.62 124.162 289.406 123.436 284.666C135.695 283.442 147.946 282.209 160.205 280.985C166.186 288.651 172.159 296.326 178.141 303.992Z"
 				fill="#FAF0B3" />
-			<path
-				class="left-eye"
-				:class="{ hover: data.faceIsHovering }"
+			<path class="left-eye" :class="{ hover: data.faceIsHovering }"
 				d="M167.971 174.244C172.642 174.244 176.428 168.579 176.428 161.59C176.428 154.602 172.642 148.937 167.971 148.937C163.3 148.937 159.514 154.602 159.514 161.59C159.514 168.579 163.3 174.244 167.971 174.244Z"
 				fill="#006837" />
 			<path
 				d="M145.856 142.017C145.722 137.783 150.071 135.271 153.425 133.909C160.644 131.213 168.877 131.213 176.105 133.909C179.459 135.271 183.809 137.793 183.674 142.026C183.046 138.087 178.939 136.385 175.648 135.271C168.635 133.21 160.904 133.21 153.882 135.271C150.591 136.385 146.484 138.087 145.856 142.026V142.017Z"
 				fill="#B38B67" />
 		</g>
-		<circle
-			cx="200"
-			cy="200"
-			r="195"
-			stroke="#7F4EC3"
-			stroke-width="10" />
-		<line
-			x1="173.5"
-			y1="212"
-			x2="228.6"
-			y2="212"
-			stroke="#E35D6A"
-			stroke-width="2" />
-		<path
-			class="wink"
-			:class="{ hover: data.faceIsHovering }"
+		<circle cx="200" cy="200" r="195" stroke="#7F4EC3" stroke-width="10" />
+		<line x1="173.5" y1="212" x2="228.6" y2="212" stroke="#E35D6A" stroke-width="2" />
+		<path class="wink" :class="{ hover: data.faceIsHovering }"
 			d="M155.539 164C150.639 166.45 151.422 165.774 154.3 163.981C162.724 158.733 173.185 158.583 182.089 162.757C183.085 163.178 183.91 163.607 184.539 164C185.264 164.453 185.233 164.446 184.696 164.131C183.845 163.631 182.974 163.173 182.089 162.757C176.744 160.502 166.496 158.521 155.539 164Z"
 			fill="#B38B67" />
-		<path
-			class="wink"
-			:class="{ hover: data.faceIsHovering }"
+		<path class="wink" :class="{ hover: data.faceIsHovering }"
 			d="M155.539 164C150.639 166.45 151.422 165.774 154.3 163.981C163.562 158.21 175.286 158.603 184.696 164.131C185.233 164.446 185.264 164.453 184.539 164C180.539 161.5 168.539 157.5 155.539 164Z"
 			stroke="#B38B67" />
 	</svg>
@@ -329,8 +247,9 @@ const data = reactive({
 
 svg {
 	position: absolute;
-	transform: scale(0.18) translate(-1000px, -770px);
+	transform: scale(0.18) translate(-1000px, -810px);
 	top: 0;
+
 	.wink {
 		display: none;
 		opacity: 0;
@@ -341,6 +260,7 @@ svg {
 			display: none;
 		}
 	}
+
 	.wink {
 		&.hover {
 			display: block;

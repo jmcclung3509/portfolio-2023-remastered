@@ -13,49 +13,53 @@ export const useScroll = () => {
 
 	const handleScroll = () => {
 
-	  const socialIcons = document.querySelectorAll(".social-icon");
+		const socialIcons = document.querySelectorAll(".social-icon");
 
 
 
 
-	  socialIcons.forEach((icon) => {
-		const iconRect = icon.getBoundingClientRect();
-		const darkSections = document.querySelectorAll(".dark");
+		socialIcons.forEach((icon) => {
+			const iconRect = icon.getBoundingClientRect();
+			const darkSections = document.querySelectorAll(".section.dark");
+			const lightSections = document.querySelectorAll(".light")
 
-		let isDark = false;
+			let isLight = false;
+
+			console.log(isLight)
+
+			lightSections.forEach((section) => {
+				const sectionRect = section.getBoundingClientRect();
+				if (iconRect.top < sectionRect.bottom && iconRect.bottom > sectionRect.top) {
+					isLight = true;
+				}
+			});
 
 
 
-		darkSections.forEach((section) => {
-		  const sectionRect = section.getBoundingClientRect();
-		  if (iconRect.top < sectionRect.bottom && iconRect.bottom > sectionRect.top) {
-			isDark = true;
-		  }
+
+			if (isLight) {
+				icon.classList.remove("light")
+				icon.classList.add("dark");
+
+			} else {
+				icon.classList.remove("dark")
+				icon.classList.add("light");
+			}
+
 		});
-
-
-
-
-		if (isDark) {
-		  icon.classList.add("light");
-		} else {
-		  icon.classList.remove("light");
-		}
-
-	  });
 	};
 
 	onMounted(() => {
-	  window.addEventListener("scroll", handleScroll, { passive: true });
-	  colorScrollContainer.value = document.querySelector(".color-scroll-container");
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		colorScrollContainer.value = document.querySelector(".color-scroll-container");
 	});
 
 	onUnmounted(() => {
-	  window.removeEventListener("scroll", handleScroll);
+		window.removeEventListener("scroll", handleScroll);
 	});
 
 	return { scrollPosition, scrollDirectionUp, colorScrollContainer };
-  };
+};
 
 
 export const useScreenSize = () => {
@@ -205,50 +209,50 @@ export function useBubbles() {
 	const noOfBubbles = 100;
 	const bubbles = ref([]);
 
-const init=()=> {
-	  const wrapper = document.querySelector('section.hero');
-	  let bubble;
-	  for (let i = 0; i < noOfBubbles; i++) {
-		bubble = createBubble();
-		wrapper.appendChild(bubble);
-	  }
+	const init = () => {
+		const wrapper = document.querySelector('section.hero');
+		let bubble;
+		for (let i = 0; i < noOfBubbles; i++) {
+			bubble = createBubble();
+			wrapper.appendChild(bubble);
+		}
 	}
 
-const createBubble=()=> {
-	  const circleContainer = document.createElement('div');
-	  circleContainer.classList.add('circle_container');
-	  circleContainer.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+	const createBubble = () => {
+		const circleContainer = document.createElement('div');
+		circleContainer.classList.add('circle_container');
+		circleContainer.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
 
-	  const circle = createCircle();
-	  circleContainer.appendChild(circle);
+		const circle = createCircle();
+		circleContainer.appendChild(circle);
 
-	  return circleContainer;
+		return circleContainer;
 	}
 
-const  createCircle=()=> {
-	const circle = document.createElement('div');
-  circle.classList.add('circle');
+	const createCircle = () => {
+		const circle = document.createElement('div');
+		circle.classList.add('circle');
 
-  // Randomly generate a number between 1 and 4 to assign circle classes
-  const randomCircleClass = Math.floor(Math.random() * 5) + 1;
-  circle.classList.add(`circle-${randomCircleClass}`);
+		// Randomly generate a number between 1 and 4 to assign circle classes
+		const randomCircleClass = Math.floor(Math.random() * 5) + 1;
+		circle.classList.add(`circle-${randomCircleClass}`);
 
-  circle.style.animationDelay = `${Math.random() * bubbleLifeTime.value}s`;
+		circle.style.animationDelay = `${Math.random() * bubbleLifeTime.value}s`;
 
-  const side = `${5 + Math.floor(Math.random() * 5)}px`;
-  circle.style.width = side;
-  circle.style.height = side;
+		const side = `${5 + Math.floor(Math.random() * 5)}px`;
+		circle.style.width = side;
+		circle.style.height = side;
 
-  return circle;
+		return circle;
 	}
 
 	onMounted(() => {
-	  init();
+		init();
 	});
 
 	return {
-	  bubbleLifeTime,
-	  bubbles,
+		bubbleLifeTime,
+		bubbles,
 
 	};
-  }
+}
