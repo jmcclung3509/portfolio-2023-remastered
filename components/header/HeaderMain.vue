@@ -1,5 +1,5 @@
 <template>
-	<header class="main flex w-full h-28" :class="[
+	<header class="main flex w-full h-24" :class="[
 		{
 			'sticky-header': isHeaderSticky,
 			'mobile-menu-open': data.mobileMenuOpen,
