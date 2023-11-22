@@ -221,6 +221,12 @@ ul.custom {
 	background: -webkit-linear-gradient(45deg, $orange, $dark-purple);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	&.dark-purple {
+		background: -webkit-linear-gradient(90deg, $default-dark, $dark-purple);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
 
 

@@ -4,10 +4,9 @@
             <div
                 class="flex flex-col space-y-4 lg:space-y-7 container mx-auto text-container items-start justify-center  p-7 ">
 
-                <h1
-                    class="text-3xl md:text-5xl lg:text-7xl 3xl:text-[8rem] text-default-dark md:w-[300%] text-center md:text-left">
-                    <span v-for="(letter, index) in formattedHeroText" class="letter" :key="index"
-                        :style="{ 'animation-delay': index * 0.1 + 's' }">{{ letter }}
+                <h1 class="text-3xl md:text-5xl lg:text-7xl 3xl:text-[8rem]  md:w-[300%]  text-center md:text-left">
+                    <span v-for="(letter, index) in formattedHeroText" class="letter  gradient-text dark-purple"
+                        :key="index" :style="{ 'animation-delay': index * 0.1 + 's' }">{{ letter }}
                     </span>
                 </h1>
                 <h2
