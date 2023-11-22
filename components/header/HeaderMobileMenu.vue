@@ -1,5 +1,5 @@
 <template>
-	<div class="mobile-menu fixed flex flex-col flex-1 lg:hidden md:w-1/2 p-10 overflow-auto space-y-4">
+	<div class="mobile-menu fixed flex flex-col flex-1 lg:hidden md:w-1/2  overflow-auto space-y-4">
 		<ul class="space-y-4">
 			<li class="relative p-2">
 				<a href="/about" class="animate-underline orange">About</a>

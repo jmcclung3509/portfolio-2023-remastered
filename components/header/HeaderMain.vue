@@ -1,5 +1,5 @@
 <template>
-	<header class="main flex w-full h-24" :class="[
+	<header class="main flex w-full h-20" :class="[
 		{
 			'sticky-header': isHeaderSticky,
 			'mobile-menu-open': data.mobileMenuOpen,
@@ -14,13 +14,14 @@
 
 				</Nuxt-Link>
 				<Nuxt-Link to="/">
-					<h4 v-show="!['sm', 'md'].includes(size)" class="text-1.5xl font-light  ml-[65px] pb-2">
+					<h4 v-show="!['sm', 'md'].includes(size)"
+						class="pt-2 gradient-text dark-purple pb-2  text-1.5xl font-light  ml-[50px] ">
 						Jessica Turner
 					</h4>
 				</Nuxt-Link>
 			</div>
 			<template v-if="!['sm', 'md'].includes(size)">
-				<nav class="middle main flex justify-center gap-4 items-center">
+				<nav class="middle main flex justify-center gap-4 items-center pt-2 ">
 					<ul class="flex z-10 items-center">
 						<li class="relative p-2">
 							<a href="/about" class="animate-underline orange">About</a>
@@ -39,7 +40,7 @@
 
 					</ul>
 				</nav>
-				<div class="right flex items-center justify-end gap-4 pb-2">
+				<div class="right flex items-center justify-end gap-4 pt-2 ">
 					<a href="https://github.com/jmcclung3509" target="_blank">
 						<font-awesome-icon class="social-icon text-1.5xl text-dark-purple hover:text-orange"
 							:icon="['fab', 'github']" /></a>

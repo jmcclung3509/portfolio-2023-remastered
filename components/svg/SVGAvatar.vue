@@ -247,7 +247,7 @@ const data = reactive({
 
 svg {
 	position: absolute;
-	transform: scale(0.18) translate(-1000px, -860px);
+	transform: scale(0.15) translate(-1200px, -1080px);
 	top: 0;
 
 	.wink {

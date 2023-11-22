@@ -167,13 +167,6 @@ ul.custom {
 				padding: 10px 16px;
 			}
 
-
-			// &:hover {
-			// 	background-image: linear-gradient(45deg, $medium-purple, $orange);
-			// 	color: $default-white;
-			// 	border: 2px solid $dark-purple;
-
-			// }
 		}
 
 	}
@@ -277,7 +270,6 @@ header.main {
 		font-family: "Dancing script", serif;
 	}
 
-	.mobile-nav-trigger {}
 }
 
 
@@ -449,7 +441,7 @@ section.hero {
 
 	.text-container {
 		position: absolute;
-		transform: translate(-50%, -65%);
+		transform: translate(-50%, -50%);
 		width: 80vmin;
 		height: 80vmin;
 		background: rgba($light-peach, .1);
@@ -459,20 +451,20 @@ section.hero {
 		top: 55%;
 
 		@screen md {
-			transform: translate(-50%, -50%);
-			width: 70vmin;
-			height: 70vmin;
+			// transform: translate(-50%, -50%);
+			// width: 70vmin;
+			// height: 70vmin;
 		}
 
 		@screen lg {
-			transform: translate(-50%, -55%);
-			width: 70vmin;
-			height: 70vmin;
+			// transform: translate(-50%, -50%);
+			// width: 70vmin;
+			// height: 70vmin;
 		}
 
 		@screen xl {
-			width: 60vmin;
-			height: 60vmin;
+			// width: 60vmin;
+			// height: 60vmin;
 		}
 	}
 
