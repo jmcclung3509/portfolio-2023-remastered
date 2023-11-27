@@ -216,7 +216,7 @@ ul.custom {
 	-webkit-text-fill-color: transparent;
 
 	&.dark-purple {
-		background: -webkit-linear-gradient(90deg, $default-dark, $dark-purple);
+		background: -webkit-linear-gradient(260deg, $default-dark, rgba($default-dark, .5));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -259,9 +259,6 @@ header.main {
 				position: relative;
 				border-bottom: 2px solid transparent;
 				transition: all .5s;
-				color: $dark-purple;
-
-
 			}
 		}
 	}
@@ -360,6 +357,23 @@ header.main {
 
 			a {
 				color: $orange;
+
+			}
+
+
+		}
+	}
+	&.purple {
+
+		&:hover {
+			color: $dark-purple;
+
+			&:before {
+				background: linear-gradient(to right, $dark-purple, rgba($dark-purple, .4));
+			}
+
+			a {
+				color: $dark-purple;
 
 			}
 

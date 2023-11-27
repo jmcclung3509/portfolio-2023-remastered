@@ -24,28 +24,28 @@
 				<nav class="middle main flex justify-center gap-4 items-center pt-2 ">
 					<ul class="flex z-10 items-center">
 						<li class="relative p-2">
-							<a href="/about" class="animate-underline orange">About</a>
+							<a href="/about" class="animate-underline text-default-dark purple">About</a>
 						</li>
 
 						<li class="relative p-2">
-							<a href="/projects/sitezeus" class="animate-underline orange">Projects</a>
+							<a href="/projects/sitezeus" class="animate-underline purple text-default-dark">Projects</a>
 						</li>
 						<li class="relative p-2">
-							<a href="https://resume.io/r/FY7HX7IvG" class="animate-underline orange">Resume</a>
+							<a href="https://resume.io/r/FY7HX7IvG" class="animate-underline purple text-default-dark" target="_blank" >Resume</a>
 						</li>
 
 						<li class="relative p-2">
-							<a href="/contact" class="animate-underline orange">Contact</a>
+							<a href="/contact" class="animate-underline text-default-dark purple" >Contact</a>
 						</li>
 
 					</ul>
 				</nav>
 				<div class="right flex items-center justify-end gap-4 pt-2 ">
 					<a href="https://github.com/jmcclung3509" target="_blank">
-						<font-awesome-icon class="social-icon text-1.5xl text-dark-purple hover:text-orange"
+						<font-awesome-icon class="social-icon text-1.5xl text-default-dark hover:text-dark-purple"
 							:icon="['fab', 'github']" /></a>
 					<a href="https://www.linkedin.com/in/jessica-turner-94b549229/" target="_blank">
-						<font-awesome-icon class="social-icon text-1.5xl text-dark-purple hover:text-orange"
+						<font-awesome-icon class="social-icon text-1.5xl text-default-dark hover:text-dark-purple"
 							:icon="['fab', 'linkedin']" />
 					</a>
 				</div>
