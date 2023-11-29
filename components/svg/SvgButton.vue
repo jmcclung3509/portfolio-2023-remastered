@@ -66,10 +66,10 @@ const props = defineProps({
 
 	a {
 		position: absolute;
-		left: 18%;
+		left: 20%;
 		text-decoration: none;
 		white-space: nowrap;
-		font-weight: 500;
+		font-weight: 300;
 		user-select: none;
 
 		background-clip: text;

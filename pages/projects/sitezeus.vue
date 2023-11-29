@@ -39,9 +39,7 @@
 
 						<p>
 							Another aspect of the page I am particullarly proud
-							of is the gradient hover effect for the logo
-components/header/HeaderNoNav.vue							carousel. To achieve this, I developed a Vue
-							composable that seamlessly adds a linear gradient
+							of is the gradient hover effect for the logo carousel. To achieve this, I developed a Vue composable that seamlessly adds a linear gradient
 							effect to SVG logos upon hover. This composable not
 							only allows for customized gradient color stops but
 							also offers functions for easy addition and removal
@@ -50,7 +48,7 @@ components/header/HeaderNoNav.vue							carousel. To achieve this, I developed a
 							to the logos by modifying their fill attribute.
 						</p>
 						<div class="pt-7 button-container flex flex-row gap-7">
-							<SvgButton label="Website" link="https://sitezeus.com" cssClass="bg-border-gradient" />
+							<SvgButton label="Website" link="https://sitezeus.com" cssClass="bg-orange" />
 						</div>
 					</div>
 					<div
@@ -70,7 +68,7 @@ components/header/HeaderNoNav.vue							carousel. To achieve this, I developed a
 							space
 						</p>
 						<div class="button-container flex flex-row gap-7">
-							<SvgButton label="Website" link="https://sitezeus.com#locate" cssClass="bg-border-gradient" />
+							<SvgButton label="Website" link="https://sitezeus.com#locate"   />
 
 						</div>
 					</div>
@@ -99,7 +97,7 @@ components/header/HeaderNoNav.vue							carousel. To achieve this, I developed a
 							customer needs and interests.
 						</p>
 						<div class="button-container flex flex-row gap-7 pt-7">
-							<SvgButton label="Website" link="https://sitezeus.com/under-60-seconds" cssClass="bg-border-gradient" />
+							<SvgButton label="Website" link="https://sitezeus.com/under-60-seconds"  />
 
 						</div>
 					</div>

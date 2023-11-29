@@ -23,7 +23,7 @@
 					hmmm... but weakness, folly, failure, also. Yes,
 					failure, most of all. The greatest teacher, failure is.
 				</h4>
-				<p class="cite text-dark-purple caps">&mdash; Yoda</p>
+				<p class="cite text-dark-purple caps font-light">&mdash; Yoda</p>
 			</div>
 		</div>
 

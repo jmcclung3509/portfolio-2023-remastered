@@ -49,7 +49,6 @@
 						</p>
 						<div class="button-container flex flex-row gap-7 pt-7">
 							<SvgButton
-							cssClass="gradient-text"
 								label="Website"
 								link="https://portfolio-2023-v3.vercel.app/" />
 
@@ -71,7 +70,6 @@
 						</p>
 						<div class="button-container flex flex-row gap-7 pt-7">
 							<SvgButton
-							cssClass="gradient-text"
 								label="Website"
 								link="https://portfolio-main-blond.vercel.app/" />
 

@@ -41,7 +41,7 @@
 							<SvgButton
 								label="Website"
 								link="https://insites.sitezeus.com/webinars/streamline-franchise-sales-development-and-operations"
-								cssClass="bg-border-gradient" />
+							 />
 						</div>
 					</div>
 					<div
