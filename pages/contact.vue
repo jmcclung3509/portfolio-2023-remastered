@@ -13,18 +13,18 @@
 					<div class="flex flex-row flex-nowrap justify-between items-center">
 						<div class="flex flex-col items-start justify-center w-[45%] space-y-2">
 							<label class="text-light-purple" for="name"> Name: </label>
-							<input class="small-label w-full px-2 py-4 rounded-2xl bg-light-purple" type="name" id="name"
+							<input class="small-label w-full px-2 py-4 rounded-2xl bg-light-peach" type="name" id="name"
 								name="name" required />
 						</div>
 						<div class="flex flex-col items-start justify-center w-[45%] space-y-2">
 							<label class="text-light-purple" for="email"> Email: </label>
-							<input class="small-box w-full px-2 py-4 rounded-2xl bg-light-purple" type="email" id="email"
+							<input class="small-box w-full px-2 py-4 rounded-2xl bg-light-peach" type="email" id="email"
 								name="email" required />
 						</div>
 					</div>
 					<div class="flex flex-col items-start justify-center space-y-2 w-full my-10 space-y-1">
 						<label class="text-light-purple" for="message"> Message: </label>
-						<textarea rows="5" cols="25" class="w-full px-2 py-4 large-box rounded-2xl bg-light-purple"
+						<textarea rows="5" cols="25" class="w-full px-2 py-4 large-box rounded-2xl bg-light-peach"
 							id="message" name="message" required />
 					</div>
 
