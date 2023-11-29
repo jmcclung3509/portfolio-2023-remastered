@@ -143,7 +143,7 @@
 											<p class="text-light-purple ml-[40px]">Frontend Developer, UI/UX Designer, April 2021 - Present</p>
 
 											<p class="text-light-purple ml-[40px]">React, Vue, Nuxt, Adobe Creative Suite, Figma</p>
-											<p class="text-default-white pt-4 ml-[40px] text-xs"> Design, develop and maintain several websites for various clients. </p>
+											<p class="text-default-white pt-4 ml-[40px] text-xs"> Design, develop and maintain websites for various clients. </p>
 										</li>
 
 
