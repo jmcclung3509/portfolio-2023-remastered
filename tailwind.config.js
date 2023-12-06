@@ -47,6 +47,7 @@ module.exports = {
 				"dark-purple": "#7F4EC3",
 				"light-peach": "#FFF4F0",
 				"orange": "#FF7442",
+				"default-light": "#fffcfc"
 			},
 			backgroundImage: {
 				"linear-gradient-1":

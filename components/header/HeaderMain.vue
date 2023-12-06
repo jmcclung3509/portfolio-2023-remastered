@@ -7,15 +7,10 @@
 	]">
 		<div class="container m-auto flex justify-between items-center w-full">
 			<div class="left flex items-center justify-center gap-2 lg:gap-4">
-				<Nuxt-Link to="/" class="h-[70px]">
-					<div class="avatar-container h-[70px]">
-						<SVGAvatar />
-					</div>
 
-				</Nuxt-Link>
 				<Nuxt-Link to="/">
-					<h4 v-show="!['sm', 'md'].includes(size)"
-						class="pt-2 gradient-text dark-purple pb-2  text-1.5xl font-light  ml-[50px] ">
+					<h4
+						class="pt-2 gradient-text dark-purple pb-2  text-1.5xl font-light ">
 						Jessica Turner
 					</h4>
 				</Nuxt-Link>

@@ -1,12 +1,10 @@
 <template>
-	<header class="main flex w-full h-28 bg-light-peach">
+	<header class="main flex w-full h-20 bg-light-peach">
 		<div class="container m-auto flex justify-between items-center z-10 w-full">
 			<div class="left flex items-center justify-center gap-4">
+
 				<Nuxt-Link to="/">
-		<img class="h-[70px]" src="@/assets/images/home/circle-avatar.svg" alt="avatar"/>
-				</Nuxt-Link>
-				<Nuxt-Link to="/">
-					<h4 v-show="!['sm', 'md'].includes(size)"
+					<h4
 					class="text-1.5xl font-thin pt-4"> Jessica Turner</h4>
 				</Nuxt-Link>
 			</div>

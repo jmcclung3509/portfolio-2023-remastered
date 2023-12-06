@@ -103,6 +103,7 @@ const onSlideChange = (swiper) => {
 		display: inline;
 		cursor: pointer;
 		&:before, &:after {
+			font-weight: 300;
 			content: "";
 			position: absolute;
 			bottom: 0;

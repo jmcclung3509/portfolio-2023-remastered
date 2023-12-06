@@ -236,7 +236,7 @@ header.main {
 	width: 100%;
 	transition: background-color .5s ease;
 
-	background-color: rgba($light-peach, .8);
+	background-color: rgba($light-peach, .5);
 
 	&.mobile-menu-open {
 		background-color: transparent;
@@ -575,7 +575,7 @@ section.info {
 		}
 		&:hover{
 			color: $orange;
-		
+
 		}
 	}
 
